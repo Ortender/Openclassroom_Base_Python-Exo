@@ -1,13 +1,10 @@
 def get_int (phrase):
-    user_input_int = None
-    while not user_input_int:
-        try:
-            user_input = input(phrase)
-            user_input_int = int(user_input)
-        except:
-            phrase = "le format est incorret, veuillez saisir l'information à nouveau: "
-            continue
-    return user_input_int
+        while True:
+            try:
+                return int(input(phrase))
+            except:
+                 phrase = "le format est incorret, veuillez saisir l'information à nouveau: "
+                 continue
 def salaire_mensuel(x):
     resultat = x/12
     return resultat
