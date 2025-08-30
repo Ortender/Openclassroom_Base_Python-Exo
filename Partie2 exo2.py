@@ -14,7 +14,7 @@ while not liste_entiers :
             liste_entiers.append(int(y))
     except:
         liste_entiers.clear()
-        nombres = input("La série indiqué ne comporte pas que des nombres, veuillez indiquer une série de nombres ")
+        nombres = input("La série indiquée ne comporte pas que des nombres, veuillez indiquer une série de nombres ")
 #la boucle for permet d'additioner les valeurs de la série
 for x in liste_entiers:
     nombres_a_additioner = x
